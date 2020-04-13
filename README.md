@@ -6,6 +6,7 @@
 扫描器的主程序是mian.py
 
 扫描器有五个功能：爆破，本地日志分析，后门检测，漏洞扫描和目录扫描
+在爆破时db.py可以把爆破的结果存入数据库,sql.sql为创建数据库表的文件，demo.php文件可以使放到web目录，访问可以得到爆破的结果
 
 爆破
 python36 main.py --cmd burst --user admin --password pass.txt --target_url 登录界面的url --target_post 用户密码提交到的url
