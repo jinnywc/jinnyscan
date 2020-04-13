@@ -1,7 +1,10 @@
 # jinnyscan
 一款轻量型的综合扫描器
+
 扫描器使用的是python3环境
+
 扫描器的主程序是mian.py
+
 扫描器有五个功能：爆破，本地日志分析，后门检测，漏洞扫描和目录扫描
 爆破
 python36 main.py --cmd burst --user admin --password pass.txt --target_url 登录界面的url --target_post 用户密码提交到的url
