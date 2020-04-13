@@ -1,0 +1,23 @@
+#coding: gbk
+
+import os
+import sys
+
+def all_path(dirname):
+    result = []
+    for maindir,subdir,filenamelist in os.walk(dirname):
+        maindir = str(maindir)
+        subdir = str(subdir)
+        filenamelist = str(filenamelist)
+        #print(("当前主目录：" + maindir).decode('gbk').encode('utf-8'))
+        #print(("当前主目录下所有目录：" + subdir).decode('gbk').encode('utf-8'))
+        #print(("主目录下所有文件：" + filenamelist).decode('gbk').encode('utf-8'))
+
+        for filename in filenamelist:
+            filename = str(filename.decode('gbk'))
+            path = (maindir + filename).decode('gbk').encode('utf-8')
+            #print(path)
+            result.append(path)
+    return result
+
+print(all_path("D:\实习\毕业设计/test"))
