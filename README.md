@@ -30,5 +30,5 @@ python36 main.py --cmd log --dir 需要日志分析的目录 -t 线程数
 
 python36 main.py --cmd door_scan --dir 需要后门检测的目录
 
-可以使用命令获取程序的帮助信息：python3 mian.py --help 
+可以使用命令获取程序的帮助信息：python3 mian.py --help  
 
